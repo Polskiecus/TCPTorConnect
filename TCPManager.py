@@ -114,14 +114,14 @@ class TorConnector:
 # Usage example:
 
 if __name__ == "__main__":
-    tor_connector = TorConnector(tor_binary_path='Components/Binaries/tor', tor_data_dir='Components/', control_password="passwd")
+    tor_connector = TorConnector(tor_binary_path='Components/Binaries/tor', tor_data_dir='Components/')
 
     try:
         # Start the Tor process and establish a circuit
         tor_connector.start_tor()
 
         # Example: Establish a persistent TCP connection
-        tor_connector.establish_tcp_connection('phgn6b3cbn2tazyx3s76eo23aqhqxyswj66af6c4omcpo67rkp7yt2qd.onion', 5001)
+        tor_connector.establish_tcp_connection('yoursite.onion', 80)
         
         # Send data through the persistent TCP connection
         tor_connector.send_data(b"Hello Onion!")
