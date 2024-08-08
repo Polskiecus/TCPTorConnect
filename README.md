@@ -8,7 +8,7 @@ only client side, currently you cant use it to host a service(and also please ne
 2. Optional(tough very recommended) start by setting up Control Port password(can be done
 using `tor --hash-password "passwd"` and editing torrc(in this case inside the Components Directory
 by adding a line like so: `HashedControlPassword YOURHASHHERE`, you will get warned if you dont do this.
-3. Also optional but recommended: recompile/get tor binary by yourself and place it under the path Components/Binaries/tor
+3. Also optional but recommended: recompile/get tor binary by yourself and place it under the path `Components/Binaries/tor`
 
 # Usage
 The program does not have a wiki yet, but all the functionality you may need is put in an example inside it :)
